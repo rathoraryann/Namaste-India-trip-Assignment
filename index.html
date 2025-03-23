@@ -3,11 +3,702 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flamingo Travel</title>
     <link rel="stylesheet" href="style.css" />
-    <title>Namaste India trip</title>
+    <script defer src="script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
   </head>
   <body>
-    <h1 id="h11">namaste india trip</h1>
-    <script src="script.js" type="text/javascript"></script>
+    <!--------------------- Navbar and Header-Section ---------------------->
+    <header>
+      <div class="top-bar">
+        <span>For inquiry: <a href="tel:+919825081806">+91 1234567890</a></span>
+        <div class="top-right">
+          <button class="country-btn">
+            IND <img src="images/flags/india-flag.png" alt="India Flag" />
+          </button>
+          <button class="country-btn">
+            USA <img src="images/flags/usa-flag.png" alt="USA Flag" />
+          </button>
+
+          <button class="account-btn">
+            <i class="fa fa-user"></i> Account
+          </button>
+          <button class="inquiry-btn">Send Inquiry</button>
+        </div>
+      </div>
+      <nav>
+        <div class="logo">Flamingo Travel</div>
+        <ul class="nav-links">
+          <li><i class="fa fa-suitcase"></i> Holiday Packages</li>
+          <li><i class="fa fa-umbrella-beach"></i> Theme Tours</li>
+          <li><i class="fa fa-plane"></i> Flights</li>
+          <li><i class="fa fa-hotel"></i> Hotels</li>
+          <li><i class="fa fa-passport"></i> Visas</li>
+          <li><i class="fa fa-blog"></i> Blogs</li>
+          <li><i class="fa fa-book"></i> Travel Guide</li>
+          <li><i class="fa fa-user-circle"></i> My Booking</li>
+          <li class="more"><i class="fa fa-bars"></i> More</li>
+        </ul>
+        <div class="mobile-menu-icon" onclick="toggleMenu()">
+          <i class="fa fa-bars"></i>
+        </div>
+      </nav>
+    </header>
+
+    <div style="display: flex; justify-content: center; align-items: center">
+      <div class="main">
+
+        
+
+        <!-----------------------------Container-1--------------------------------------->
+        <div class="container-1">
+          <div id="box-1">
+            <div class="search-container">
+              <input
+                type="text"
+                class="search-input"
+                placeholder="Where would you like to go? Type City, Country, Theme, Tours..."
+              />
+              <span class="search-icon">&#128269;</span>
+            </div>
+            <div class="responsive-div">
+              <ul style="display: flex; flex-direction: row; list-style-type: none; justify-content: center; align-items: center;">
+              <li class="list"><i class="fa fa-suitcase icons"></i> Holiday Packages</li>
+              <li class="list"><i class="fa fa-umbrella-beach  icons"></i> Theme Tours</li>
+              <li class="list"><i class="fa fa-plane icons"></i> Flights</li>
+              <li class="list"><i class="fa fa-hotel icons"></i> Hotels</li>
+              <li class="list"><i class="fa fa-passport icons"></i> Visas</li>              
+              <li class="list"><i class="fa fa-blog icons"></i> Blogs</li>
+              <li class="list"><i class="fa fa-book icons"></i> Travel Guide</li>
+            </ul>
+          </div>
+            <section
+              class="trending-destinations"
+              aria-label="Top Trending Travel Destinations"
+            >
+              <h2 class="section-heading">Explore Tour Packages by Theme</h2>
+              <div class="destinations-container">
+                <article class="destination-card">
+                  <div
+                    class="card-image"
+                    style="
+                      background-image: url('https://www.flamingotravels.co.in/_next/image?url=https%3A%2F%2Fimgcdn.flamingotravels.co.in%2FImages%2FWebsite%2FExploreDestinationByTheme%2FVietnam.jpg&w=256&q=75');
+                    "
+                  ></div>
+                  <div class="card-content">
+                    <h3>South Africa</h3>
+                    <div class="destination-meta">
+                      <span class="badge">1st Padagua</span>
+                      <p class="price">From £8,440</p>
+                    </div>
+                  </div>
+                </article>
+                <article class="destination-card">
+                  <div
+                    class="card-image"
+                    style="
+                      background-image: url('https://www.flamingotravels.co.in/_next/image?url=https%3A%2F%2Fimgcdn.flamingotravels.co.in%2FImages%2FWebsite%2FExploreDestinationByTheme%2Fjapan.jpg&w=256&q=75');
+                    "
+                  ></div>
+                  <div class="card-content">
+                    <h3>Japan</h3>
+                    <div class="destination-meta">
+                      <span class="badge">1st Padagua</span>
+                      <p class="price">From £2,204 to 21 Padagua</p>
+                    </div>
+                  </div>
+                </article>
+                <article class="destination-card">
+                  <div
+                    class="card-image"
+                    style="
+                      background-image: url('https://www.flamingotravels.co.in/_next/image?url=https%3A%2F%2Fimgcdn.flamingotravels.co.in%2FImages%2FWebsite%2FExploreDestinationByTheme%2Ftrending-europe.jpg&w=256&q=75');
+                    "
+                  ></div>
+                  <div class="card-content">
+                    <h3>All Of Europe</h3>
+                    <div class="destination-meta">
+                      <span class="price">11,943 to 27 Padagua</span>
+                      <p class="price">From £1,364 to 27 Padagua</p>
+                    </div>
+                  </div>
+                </article>
+                <article class="destination-card">
+                  <div
+                    class="card-image"
+                    style="
+                      background-image: url('https://www.flamingotravels.co.in/_next/image?url=https%3A%2F%2Fimgcdn.flamingotravels.co.in%2FImages%2FWebsite%2FExploreDestinationByTheme%2Fhoneymoo-tours.jpg&w=128&q=75');
+                    "
+                  ></div>
+                  <div class="card-content">
+                    <h3>South Africa</h3>
+                    <div class="destination-meta">
+                      <span class="badge">1st Padagua</span>
+                      <p class="price">From £8,440</p>
+                    </div>
+                  </div>
+                </article>
+                <article class="destination-card">
+                  <div
+                    class="card-image"
+                    style="
+                      background-image: url('https://picsum.photos/seed/japan/300/400');
+                    "
+                  ></div>
+                  <div class="card-content">
+                    <h3>Japan</h3>
+                    <div class="destination-meta">
+                      <span class="badge">1st Padagua</span>
+                      <p class="price">From £2,204 to 21 Padagua</p>
+                    </div>
+                  </div>
+                </article>
+                <article class="destination-card">
+                  <div
+                    class="card-image"
+                    style="
+                      background-image: url('https://picsum.photos/seed/europe/300/400');
+                    "
+                  ></div>
+                  <div class="card-content">
+                    <h3>All Of Europe</h3>
+                    <div class="destination-meta">
+                      <span class="price">11,943 to 27 Padagua</span>
+                      <p class="price">From £1,364 to 27 Padagua</p>
+                    </div>
+                  </div>
+                </article>
+                <article class="destination-card">
+                  <div
+                    class="card-image"
+                    style="
+                      background-image: url('https://www.flamingotravels.co.in/_next/image?url=https%3A%2F%2Fimgcdn.flamingotravels.co.in%2FImages%2FWebsite%2FExploreDestinationByTheme%2FVietnam.jpg&w=256&q=75');
+                    "
+                  ></div>
+                  <div class="card-content">
+                    <h3>South Africa</h3>
+                    <div class="destination-meta">
+                      <span class="badge">1st Padagua</span>
+                      <p class="price">From £8,440</p>
+                    </div>
+                  </div>
+                </article>
+                <article class="destination-card">
+                  <div
+                    class="card-image"
+                    style="
+                      background-image: url('https://picsum.photos/seed/japan/300/400');
+                    "
+                  ></div>
+                  <div class="card-content">
+                    <h3>Japan</h3>
+                    <div class="destination-meta">
+                      <span class="badge">1st Padagua</span>
+                      <p class="price">From £2,204 to 21 Padagua</p>
+                    </div>
+                  </div>
+                </article>
+                </article>
+                <article class="destination-card">
+                  <div
+                    class="card-image"
+                    style="
+                      background-image: url('https://picsum.photos/seed/southafrica/300/400');
+                    "
+                  ></div>
+                  <div class="card-content">
+                    <h3>Canada</h3>
+                    <div class="destination-meta">
+                      <span class="badge">1st Padagua</span>
+                      <p class="price">From £8,440</p>
+                    </div>
+                  </div>
+                </article>
+                <article class="destination-card">
+                  <div
+                    class="card-image"
+                    style="
+                      background-image: url('https://picsum.photos/seed/japan/300/400');
+                    "
+                  ></div>
+                  <div class="card-content">
+                    <h3>Singapore</h3>
+                    <div class="destination-meta">
+                      <span class="badge">1st Padagua</span>
+                      <p class="price">From £2,204 to 21 Padagua</p>
+                    </div>
+                  </div>
+                </article>
+                
+              </div>
+            </section>
+          </div>
+          <div id="box-2">
+            <div class="slider-container">
+              <div class="slider">
+                <div class="slide active">
+                  <img
+                    src="images/others/hero-image.webp"
+                    alt="Travel Image"
+                    class="hero-img"
+                  />
+                </div>
+                <div class="slide active">
+                  <img
+                    src="images/others/hero-image.webp"
+                    alt="Travel Image"
+                    class="hero-img"
+                  />
+                </div>
+                <div class="slide active">
+                  <img
+                    src="images/others/hero-image.webp"
+                    alt="Travel Image"
+                    class="hero-img"
+                  />
+                </div>
+                <div class="slide active">
+                  <img
+                    src="images/others/hero-image.webp"
+                    alt="Travel Image"
+                    class="hero-img"
+                  />
+                </div>
+                <!-- <button class="prev">❮</button>
+                <button class="next">❯</button> -->
+              </div>
+              <div class="dots-container"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-----------------------------Main-Section------------------------------------------------>
+
+        <!-- Top trending travel destination -->
+        <section
+          class="trending-destinations"
+          aria-label="Top Trending Travel Destinations"
+        >
+          <h2 class="section-heading">Top Trending Travel Destinations</h2>
+          <div class="destinations-container">
+            <article class="destination-card">
+              <div
+                class="card-image"
+                style="
+                  background-image: url('https://www.flamingotravels.co.in/_next/image?url=https%3A%2F%2Fimgcdn.flamingotravels.co.in%2FImages%2FWebsite%2FExploreDestinationByTheme%2FVietnam.jpg&w=256&q=75');
+                "
+              ></div>
+              <div class="card-content">
+                <h3>South Africa</h3>
+                <div class="destination-meta">
+                  <span class="badge">1st Padagua</span>
+                  <p class="price">From £8,440</p>
+                </div>
+              </div>
+            </article>
+            <article class="destination-card">
+              <div
+                class="card-image"
+                style="
+                  background-image: url('https://www.flamingotravels.co.in/_next/image?url=https%3A%2F%2Fimgcdn.flamingotravels.co.in%2FImages%2FWebsite%2FExploreDestinationByTheme%2Fjapan.jpg&w=256&q=75');
+                "
+              ></div>
+              <div class="card-content">
+                <h3>Japan</h3>
+                <div class="destination-meta">
+                  <span class="badge">1st Padagua</span>
+                  <p class="price">From £2,204 to 21 Padagua</p>
+                </div>
+              </div>
+            </article>
+            <article class="destination-card">
+              <div
+                class="card-image"
+                style="
+                  background-image: url('https://www.flamingotravels.co.in/_next/image?url=https%3A%2F%2Fimgcdn.flamingotravels.co.in%2FImages%2FWebsite%2FExploreDestinationByTheme%2Ftrending-europe.jpg&w=256&q=75');
+                "
+              ></div>
+              <div class="card-content">
+                <h3>All Of Europe</h3>
+                <div class="destination-meta">
+                  <span class="price">11,943 to 27 Padagua</span>
+                  <p class="price">From £1,364 to 27 Padagua</p>
+                </div>
+              </div>
+            </article>
+            <article class="destination-card">
+              <div
+                class="card-image"
+                style="
+                  background-image: url('https://www.flamingotravels.co.in/_next/image?url=https%3A%2F%2Fimgcdn.flamingotravels.co.in%2FImages%2FWebsite%2FExploreDestinationByTheme%2FVietnam.jpg&w=256&q=75');
+                "
+              ></div>
+              <div class="card-content">
+                <h3>South Africa</h3>
+                <div class="destination-meta">
+                  <span class="badge">1st Padagua</span>
+                  <p class="price">From £8,440</p>
+                </div>
+              </div>
+            </article>
+            <article class="destination-card">
+              <div
+                class="card-image"
+                style="
+                  background-image: url('https://www.flamingotravels.co.in/_next/image?url=https%3A%2F%2Fimgcdn.flamingotravels.co.in%2FImages%2FWebsite%2FExploreDestinationByTheme%2Fjapan.jpg&w=256&q=75');
+                "
+              ></div>
+              <div class="card-content">
+                <h3>Japan</h3>
+                <div class="destination-meta">
+                  <span class="badge">1st Padagua</span>
+                  <p class="price">From £2,204 to 21 Padagua</p>
+                </div>
+              </div>
+            </article>
+            <article class="destination-card">
+              <div
+                class="card-image"
+                style="
+                  background-image: url('https://www.flamingotravels.co.in/_next/image?url=https%3A%2F%2Fimgcdn.flamingotravels.co.in%2FImages%2FWebsite%2FExploreDestinationByTheme%2Ftrending-europe.jpg&w=256&q=75');
+                "
+              ></div>
+              <div class="card-content">
+                <h3>All Of Europe</h3>
+                <div class="destination-meta">
+                  <span class="price">11,943 to 27 Padagua</span>
+                  <p class="price">From £1,364 to 27 Padagua</p>
+                </div>
+              </div>
+            </article>
+            <article class="destination-card">
+              <div
+                class="card-image"
+                style="
+                  background-image: url('https://www.flamingotravels.co.in/_next/image?url=https%3A%2F%2Fimgcdn.flamingotravels.co.in%2FImages%2FWebsite%2FExploreDestinationByTheme%2Fhoneymoo-tours.jpg&w=128&q=75');
+                "
+              ></div>
+              <div class="card-content">
+                <h3>South Africa</h3>
+                <div class="destination-meta">
+                  <span class="badge">1st Padagua</span>
+                  <p class="price">From £8,440</p>
+                </div>
+              </div>
+            </article>
+            <article class="destination-card">
+              <div
+                class="card-image"
+                style="
+                  background-image: url('https://picsum.photos/seed/japan/300/400');
+                "
+              ></div>
+              <div class="card-content">
+                <h3>Japan</h3>
+                <div class="destination-meta">
+                  <span class="badge">1st Padagua</span>
+                  <p class="price">From £2,204 to 21 Padagua</p>
+                </div>
+              </div>
+            </article>
+            <article class="destination-card">
+              <div
+                class="card-image"
+                style="
+                  background-image: url('https://picsum.photos/seed/europe/300/400');
+                "
+              ></div>
+              <div class="card-content">
+                <h3>All Of Europe</h3>
+                <div class="destination-meta">
+                  <span class="price">11,943 to 27 Padagua</span>
+                  <p class="price">From £1,364 to 27 Padagua</p>
+                </div>
+              </div>
+            </article>
+            <article class="destination-card">
+              <div
+                class="card-image"
+                style="
+                  background-image: url('https://www.flamingotravels.co.in/_next/image?url=https%3A%2F%2Fimgcdn.flamingotravels.co.in%2FImages%2FWebsite%2FExploreDestinationByTheme%2FVietnam.jpg&w=256&q=75');
+                "
+              ></div>
+              <div class="card-content">
+                <h3>South Africa</h3>
+                <div class="destination-meta">
+                  <span class="badge">1st Padagua</span>
+                  <p class="price">From £8,440</p>
+                </div>
+              </div>
+            </article>
+            <article class="destination-card">
+              <div
+                class="card-image"
+                style="
+                  background-image: url('https://picsum.photos/seed/japan/300/400');
+                "
+              ></div>
+              <div class="card-content">
+                <h3>Japan</h3>
+                <div class="destination-meta">
+                  <span class="badge">1st Padagua</span>
+                  <p class="price">From £2,204 to 21 Padagua</p>
+                </div>
+              </div>
+            </article>
+            </article>
+            <article class="destination-card">
+              <div
+                class="card-image"
+                style="
+                  background-image: url('https://picsum.photos/seed/southafrica/300/400');
+                "
+              ></div>
+              <div class="card-content">
+                <h3>Canada</h3>
+                <div class="destination-meta">
+                  <span class="badge">1st Padagua</span>
+                  <p class="price">From £8,440</p>
+                </div>
+              </div>
+            </article>
+            <article class="destination-card">
+              <div
+                class="card-image"
+                style="
+                  background-image: url('https://picsum.photos/seed/japan/300/400');
+                "
+              ></div>
+              <div class="card-content">
+                <h3>Singapore</h3>
+                <div class="destination-meta">
+                  <span class="badge">1st Padagua</span>
+                  <p class="price">From £2,204 to 21 Padagua</p>
+                </div>
+              </div>
+            </article>
+            
+          </div>
+        </section>
+
+        <!-----------Happy Travellers------------->
+        <div class="happy-traveller-container">
+          <h2 style="margin-left: 6px">Happy Travellers</h2>
+          <button class="nav-btn prev">❮</button>
+          <div class="happy-traveller-slides">
+            <div class="happy-traveller-card">
+              <h3 class="title">
+                An Unforgettable Journey with Umaul and Flamingo!
+              </h3>
+              <p class="name">Mr. Niamet Bianni</p>
+              <p class="content">
+                Now that we've all returned home and settled back into our
+                routine, remember to read more
+              </p>
+              <div class="tags">
+                <span> Asia</span>
+                <span> Family Tour</span>
+              </div>
+            </div>
+            <div class="happy-traveller-card">
+              <h3 class="title">
+                An Unforgettable Journey with Umaul and Flamingo!
+              </h3>
+              <p class="name">Mr. Niamet Bianni</p>
+              <p class="content">
+                Now that we've all returned home and settled back into our
+                routine, remember to read more
+              </p>
+              <div class="tags">
+                <span> Asia</span>
+                <span>Family Tour</span>
+              </div>
+            </div>
+            <div class="happy-traveller-card">
+              <h3 class="title">
+                An Unforgettable Journey with Umaul and Flamingo!
+              </h3>
+              <p class="name">Mr. Niamet Bianni</p>
+              <p class="content">
+                Now that we've all returned home and settled back into our
+                routine, remember to read more
+              </p>
+              <div class="tags">
+                <span> Asia</span>
+                <span>Family Tour</span>
+              </div>
+            </div>
+            <div class="happy-traveller-card">
+              <h3 class="title">
+                An Unforgettable Journey with Umaul and Flamingo!
+              </h3>
+              <p class="name">Mr. Niamet Bianni</p>
+              <p class="content">
+                Now that we've all returned home and settled back into our
+                routine, remember to read more
+              </p>
+            </div>
+          </div>
+          <button class="nav-btn next">❯</button>
+        </div>
+
+        <section class="about-us">
+          <h1 style="font-size: 23px; margin-left: 10px">About Us</h1>
+          <div class="about-1">
+            <div
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 400px;
+              "
+            >
+              <img
+                src="images/flags/india-flag.png"
+                style="width: 200px; height: 200px; border-radius: 14px"
+              />
+            </div>
+            <div class="about-right">
+              <p class="quote">
+                Travel brings knowledge, Knowledge brings opportunity,
+                Opportunity brings prosperity
+              </p>
+              <p class="description">
+                Started in 1996 from a small set up of 3 team members today we
+                are a big team of 250 plus team members. We are famous as a
+                Gujarati International Tour Operator based out of Ahmedabad,
+                especially for arranging vegetarian meals and also catering to
+                Jain meals...
+              </p>
+            </div>
+            <div
+              class="about-2"
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 10px;
+              "
+            >
+              <div class="stat-card">
+                <div class="stat-number" style="font-size: 24px">
+                  2,100,000+
+                </div>
+                <div class="stat-label">Happy Families</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!----------------Footer------------------>
+        <div
+          class="footer-container"
+          style="display: flex; flex-direction: column; margin: 5px;"
+        >
+          <div >
+              <h3 class="about-h">Top Destination</h2>
+              <p class="about-p">
+                Kerala Tours And PackagesBhutan Travel PackagesGoa Tours And
+                PackagesSingapore Holiday PackagesMalaysia Travel
+                PackagesThailand Tours And PackagesLeh Holiday PackagesHimachal
+                Pradesh Tour PackageUttarakhand Travel PackagesRajasthan Travel
+                PackagesNepal Vacation PackagesSikkim Trip PackagesKashmir Trip
+                PackagesAndaman Tour PackagesVietnam Trip PackagesJapan Travel
+                PackagesBali PackagesSingapore Malaysia PackagesIceland Vacation
+                PackagesItaly Tour PackagesSpain Vacation PackagesSwitzerland
+                Holiday PackagesGreece Travel PackagesTurkey Tour PackagesDubai
+                Tours And PackagesBaku Travel PackagesUSA Travel PackagesMexico
+                Tour PackagesAustralia Trip PackagesNew Zealand Tour
+                PackagesEgypt Travel PackagesMauritius Travel PackagesSeychelles
+                Tour PackagesSouth Africa Travel PackagesKenya Tour
+                PackagesLakshadweep Holiday PackagesMadagascar Tour Packages
+              </p>
+          </div>
+          <div >
+              <h3 class="about-h">Top Themes</h2>
+              <p class="about-p">
+                Southeast Group Tour PackagesGroup Tours To Europe From
+                IndiaDubai Group Tour PackagesAmerica Group Tour PackagesAfrica
+                Group Tour PackagesNew Zealand Tour Packages For CoupleBali Tour
+                Packages For CoupleSwitzerland Tour Packages For CoupleThailand
+                Tour Packages For CoupleKerala Tour Packages For CoupleBhutan
+                Group TourAustralia New Zealand Group Tour PackagesAustralia
+                Tour Packages For CoupleAfrica Tour Packages For CoupleSingapore
+                Tour Packages For CoupleMauritius Tour Packages For CoupleEurope
+                Tour Packages For CoupleAmerica & Canada Summer 2025 Tour
+                PackagesDubai Summer 2025 ToursMaldives Tour Packages For
+                CoupleNorth Kerala Tour Packages For CoupleAndaman Tour Packages
+                For CoupleGujarat City BreakTaj Package DealsIndia &
+                Subcontinent Group Tour PackagesIceland Tour Packages For
+                CoupleKashmir Fixed Departure ToursKashmir Tour Packages For
+                CoupleSikkim Fixed Departure ToursSoutheast Summer 2025 Tour
+                PackagesAustralia & New Zealand Summer 2025 Tour PackagesIndia
+                Summer 2025 Tour PackagesEurope Summer 2025 Tour PackagesAfrica
+                Summer 2025 Tour PackagesJapan Tour with ChefVietnam And
+                Cambodia Tour with ChefTurkey Tour with ChefEgypt Tour with
+                ChefBali Fix Departure ToursNortheast Fixed DepartureBaku
+                Maharaj TourWinter ToursEurope Winter ToursSri Lanka Maharaj
+                TourSouth Africa Maharaj TourSuper Seller Holiday PackagesIndia
+                Super Seller PackagesSoutheast Super Seller PackagesEurope Super
+                Seller PackagesMiddle East Super Seller Packages
+              </p>
+          </div>
+          <div >
+              <h3 class="about-h">General</h2>
+              <p class="about-p">
+                India Travel GuideWorld Travel GuideBlogsVideo
+                GalleryBrochureAbout UsContact UsTestimonialsCareerFAQPartner
+                with UsAdvertise with UsRetrieve Booking
+              </p>
+          </div>
+        </div>
+
+        <div style="width: 100%; height: 1px; background-color: gray;"></div>
+
+        <div class="footer-content">
+          <div class="bottom-section">
+          <div class="keep-in-touch" style="display: flex;  align-items: center;">
+              <h3 style="color: gray;">Keep in touch: </h3>
+              <div style="gap: 10px; display: flex; margin-left: 10px;">
+                <i class="fab fa-instagram icons-size"></i>
+                <i class="fa-brands fa-facebook icons-size"></i>
+                <i class="fa-brands fa-youtube icons-size"></i>
+                <i class="fa-brands fa-x-twitter icons-size"></i>
+                <i class="fa-brands fa-pinterest icons-size"></i>
+              </div>
+          </div>
+          <div class="sister-concerns">
+            <h3 style="color: gray;">Our sisters: </h3> 
+            <div style="gap: 7px; display: flex; margin-left: 10px;">
+                <i class="fab fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+            </div>            
+          </div>
+          </div>
+
+          <div style="width: 100%; height: 1px; background-color: gray;"></div>
+          
+
+          <div class="bottom-section" style="margin: 14px 0px;">
+            <div class="policies">
+              <a href="#">Payment Procedure</a>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms And Condition</a>
+              <a href="#">Terms of Use</a>
+              <a href="#">CSR Policy</a>
+            </div>
+          <div class="copyright">
+              Copyright © 2025 @rathoraryan All Rights Reserved.
+          </div>
+          </div>
+      </div>
+        </div>
+      </div>
   </body>
 </html>
